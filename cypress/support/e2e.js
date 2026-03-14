@@ -17,7 +17,7 @@ Cypress.Commands.add("waitForPageLoad", () => {
   // Attendre que le titre soit disponible
   cy.title().should("not.be.empty");
 
-  // Attendre que les images visibles soient chargées (si présentes)
+  // Attendre que les images visibles soient chargées 
   cy.get("body").then(($body) => {
     if ($body.find("img:visible").length > 0) {
       cy.get("img:visible", { timeout: 3000 }).each(($img) => {
