@@ -1,0 +1,21 @@
+{
+  "name": "cypress-mouram-tests",
+  "version": "1.0.0",
+  "description": "Suite de tests E2E Cypress pour mouram.netlify.app",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:headed": "cypress run --headed",
+    "cy:run:navigation": "cypress run --spec 'cypress/e2e/01_navigation.cy.js'",
+    "cy:run:hero": "cypress run --spec 'cypress/e2e/02_hero.cy.js'",
+    "cy:run:about": "cypress run --spec 'cypress/e2e/03_about.cy.js'",
+    "cy:run:skills": "cypress run --spec 'cypress/e2e/04_skills.cy.js'",
+    "cy:run:projects": "cypress run --spec 'cypress/e2e/05_projects.cy.js'",
+    "cy:run:contact": "cypress run --spec 'cypress/e2e/06_contact.cy.js'",
+    "cy:run:responsive": "cypress run --spec 'cypress/e2e/07_responsive.cy.js'",
+    "cy:run:accessibility": "cypress run --spec 'cypress/e2e/08_accessibility.cy.js'"
+  },
+  "devDependencies": {
+    "cypress": "^15.11.0"
+  }
+}
