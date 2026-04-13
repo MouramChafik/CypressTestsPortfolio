@@ -36,9 +36,8 @@ describe("09 – Page Certificats et qualifications", () => {
 
   it("les certificats contiennent des dates", () => {
     cy.get("main")
-      .should("contain.text", "2025")
-      .or("contain.text", "2026")
-      .or("contain.text", "2024");
+      .invoke("text")
+      .should("match", /202[0-9]/);
     cy.contains(
       /janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre/i,
     ).should("exist");
