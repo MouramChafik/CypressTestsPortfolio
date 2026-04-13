@@ -14,7 +14,9 @@ describe("10 – Page Timeline / Parcours professionnel", () => {
 
   it("affiche au moins 5 postes professionnels", () => {
     cy.get("main h3, section h3")
-      .filter(":contains('Testeur'), :contains('Développeur'), :contains('Assistant'), :contains('Agent'), :contains('Aide')")
+      .filter(
+        ":contains('Testeur'), :contains('Développeur'), :contains('Assistant'), :contains('Agent'), :contains('Aide')",
+      )
       .should("have.length.gte", 5);
   });
 
@@ -32,7 +34,9 @@ describe("10 – Page Timeline / Parcours professionnel", () => {
   });
 
   it("affiche des dates pour chaque position", () => {
-    cy.get("main").invoke("text").should("match", /202[0-9]|201[0-9]|2013|2014|2015|2016|2017|2018/i);
+    cy.get("main")
+      .invoke("text")
+      .should("match", /202[0-9]|201[0-9]|2013|2014|2015|2016|2017|2018/i);
   });
 
   it("contient des réalisations clés avec des puces", () => {

@@ -23,7 +23,8 @@ cypress-mouram/
 │       ├── 07_responsive.cy.js    # Responsivité multi-breakpoints
 │       ├── 08_accessibility.cy.js # Accessibilité & performances
 │       ├── 09_certificates.cy.js  # Page Certificats et qualifications
-│       └── 10_timeline.cy.js      # Page Timeline / Parcours professionnel
+│       ├── 10_timeline.cy.js      # Page Timeline / Parcours professionnel
+│       └── 11_istqb.cy.js         # Page ISTQB Foundation Level
 ```
 
 ---
@@ -31,7 +32,8 @@ cypress-mouram/
 ## 🚀 Installation
 
 ### Prérequis
-- **Node.js** v16+ 
+
+- **Node.js** v16+
 - **npm** v8+
 
 ### Étapes
@@ -54,18 +56,19 @@ npm run cy:run
 
 ## 🧩 Description des specs
 
-| Fichier | Scénarios couverts |
-|---|---|
-| `01_navigation.cy.js` | Titre de page, barre de navigation, liens ancres, scroll |
-| `02_hero.cy.js` | Nom affiché, titre pro, CTA, above the fold, photo |
-| `03_about.cy.js` | Présence section, texte, mention des compétences clés, image |
-| `04_skills.cy.js` | Technologies QA (Cypress, Selenium…) et frontend (React, JS…) |
-| `05_projects.cy.js` | Cartes projets, titres, descriptions, liens GitHub/démo, images |
-| `06_contact.cy.js` | Formulaire (champs, validation, email invalide), réseaux sociaux |
-| `07_responsive.cy.js` | 5 breakpoints (320→1920px), overflow, hamburger menu |
-| `08_accessibility.cy.js` | Alt images, H1 unique, hiérarchie titres, labels, meta SEO |
-| `09_certificates.cy.js` | Catégories certificats, dates, téléchargements, formations en cours |
-| `10_timeline.cy.js` | Parcours professionnel, dates, réalisations, technologies, images |
+| Fichier                  | Scénarios couverts                                                  |
+| ------------------------ | ------------------------------------------------------------------- |
+| `01_navigation.cy.js`    | Titre de page, barre de navigation, liens ancres, scroll            |
+| `02_hero.cy.js`          | Nom affiché, titre pro, CTA, above the fold, photo                  |
+| `03_about.cy.js`         | Présence section, texte, mention des compétences clés, image        |
+| `04_skills.cy.js`        | Technologies QA (Cypress, Selenium…) et frontend (React, JS…)       |
+| `05_projects.cy.js`      | Cartes projets, titres, descriptions, liens GitHub/démo, images     |
+| `06_contact.cy.js`       | Formulaire (champs, validation, email invalide), réseaux sociaux    |
+| `07_responsive.cy.js`    | 5 breakpoints (320→1920px), overflow, hamburger menu                |
+| `08_accessibility.cy.js` | Alt images, H1 unique, hiérarchie titres, labels, meta SEO          |
+| `09_certificates.cy.js`  | Catégories certificats, dates, téléchargements, formations en cours |
+| `10_timeline.cy.js`      | Parcours professionnel, dates, réalisations, technologies, images   |
+| `11_istqb.cy.js`         | Certification ISTQB, domaines couverts, préparation, étapes         |
 
 ---
 
@@ -85,6 +88,7 @@ npm run cy:run:responsive   # Spec responsive uniquement
 npm run cy:run:accessibility # Spec a11y & perf uniquement
 npm run cy:run:certificates # Spec certificats uniquement
 npm run cy:run:timeline     # Spec timeline uniquement
+npm run cy:run:istqb        # Spec ISTQB uniquement
 ```
 
 ---
@@ -92,6 +96,7 @@ npm run cy:run:timeline     # Spec timeline uniquement
 ## ⚙️ Configuration
 
 La config dans `cypress.config.js` :
+
 - **baseUrl** : `https://mouram.netlify.app`
 - **timeout** : 10s par commande, 30s chargement de page
 - **viewport** par défaut : 1280×800
