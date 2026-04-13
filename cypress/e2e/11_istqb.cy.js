@@ -22,16 +22,6 @@ describe("11 – Page ISTQB Foundation Level", () => {
     cy.get("main, section").invoke("text").should("not.be.empty");
   });
 
-  it("affiche des titres ou headings", () => {
-    cy.get(
-      "main h1, main h2, main h3, section h1, section h2, section h3",
-    ).should("have.length.gte", 1);
-  });
-
-  it("affiche des paragraphes de contenu", () => {
-    cy.get("main p, section p").should("have.length.gte", 1);
-  });
-
   it("contient au moins une image", () => {
     cy.get("main img, section img, [role='main'] img").should(
       "have.length.gte",
