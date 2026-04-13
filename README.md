@@ -21,7 +21,9 @@ cypress-mouram/
 │       ├── 05_projects.cy.js      # Section Projets / Portfolio
 │       ├── 06_contact.cy.js       # Formulaire de contact
 │       ├── 07_responsive.cy.js    # Responsivité multi-breakpoints
-│       └── 08_accessibility.cy.js # Accessibilité & performances
+│       ├── 08_accessibility.cy.js # Accessibilité & performances
+│       ├── 09_certificates.cy.js  # Page Certificats et qualifications
+│       └── 10_timeline.cy.js      # Page Timeline / Parcours professionnel
 ```
 
 ---
@@ -62,6 +64,8 @@ npm run cy:run
 | `06_contact.cy.js` | Formulaire (champs, validation, email invalide), réseaux sociaux |
 | `07_responsive.cy.js` | 5 breakpoints (320→1920px), overflow, hamburger menu |
 | `08_accessibility.cy.js` | Alt images, H1 unique, hiérarchie titres, labels, meta SEO |
+| `09_certificates.cy.js` | Catégories certificats, dates, téléchargements, formations en cours |
+| `10_timeline.cy.js` | Parcours professionnel, dates, réalisations, technologies, images |
 
 ---
 
@@ -79,6 +83,8 @@ npm run cy:run:projects     # Spec projets uniquement
 npm run cy:run:contact      # Spec contact uniquement
 npm run cy:run:responsive   # Spec responsive uniquement
 npm run cy:run:accessibility # Spec a11y & perf uniquement
+npm run cy:run:certificates # Spec certificats uniquement
+npm run cy:run:timeline     # Spec timeline uniquement
 ```
 
 ---
