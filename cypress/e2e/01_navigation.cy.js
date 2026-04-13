@@ -1,4 +1,3 @@
-// cypress/e2e/01_navigation.cy.js
 // ─────────────────────────────────────────────────────────────
 // Tests de navigation : chargement, titre, liens de menu, ancres
 // ─────────────────────────────────────────────────────────────
