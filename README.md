@@ -24,7 +24,8 @@ cypress-mouram/
 │       ├── 08_accessibility.cy.js # Accessibilité & performances
 │       ├── 09_certificates.cy.js  # Page Certificats et qualifications
 │       ├── 10_timeline.cy.js      # Page Timeline / Parcours professionnel
-│       └── 11_istqb.cy.js         # Page ISTQB Foundation Level
+│       ├── 11_istqb.cy.js         # Page ISTQB Foundation Level
+│       └── 12_roadmap.cy.js       # Page Roadmap / Feuille de route
 ```
 
 ---
@@ -69,6 +70,7 @@ npm run cy:run
 | `09_certificates.cy.js`  | Catégories certificats, dates, téléchargements, formations en cours |
 | `10_timeline.cy.js`      | Parcours professionnel, dates, réalisations, technologies, images   |
 | `11_istqb.cy.js`         | Certification ISTQB, domaines couverts, préparation, étapes         |
+| `12_roadmap.cy.js`       | Feuille de route, formations, domaines d'apprentissage, catégories  |
 
 ---
 
@@ -89,6 +91,7 @@ npm run cy:run:accessibility # Spec a11y & perf uniquement
 npm run cy:run:certificates # Spec certificats uniquement
 npm run cy:run:timeline     # Spec timeline uniquement
 npm run cy:run:istqb        # Spec ISTQB uniquement
+npm run cy:run:roadmap      # Spec roadmap uniquement
 ```
 
 ---
